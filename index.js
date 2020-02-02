@@ -247,10 +247,3 @@ exports.astNodeVisitor = {
   }
 
 };
-
-exports.handlers = {
-  parseComplete: function(e) {
-    // Build inheritance chain after adding @extends annotations
-    addInherited(e.doclets, e.doclets.index);
-  }
-}
